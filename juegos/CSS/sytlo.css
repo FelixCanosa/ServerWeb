@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+
+body{
+    color: aliceblue;
+    background-image: url(/imgenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main{
+    
+    margin: 100px 10%;
+}
+
+/*configuracion del menu*/
+header{
+    
+    margin: 0px auto;
+    text-align: center;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: fixed; /* Fija el encabezado en su posición */
+    top: 0; /* Alinea el encabezado en la parte superior de la ventana del navegador */
+    width: 100%; /* Asegura que el encabezado se extienda a lo ancho de la pantalla */
+    z-index: 1000; /* Asegura que el encabezado se mantenga por encima de otros elementos */
+    
+}
+
+
+    
+
+
+ul {
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 0px auto;    
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+a{
+    margin: 50px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: pixel;
+    color: black;
+    
+}
+
+a:hover{
+    color: navajowhite;
+
+}
+
+#logo{
+    background-color: rgb(97, 207, 198);
+    display: inline-block;
+    border-radius: 50px 30px;
+    margin-top: 10px;
+     
+}
+
+#logo-li{
+    margin: 1px;
+    padding: 1px;
+}
+
+#logo-avion{
+    width: 40px;
+}
+
+/*fin de la configuracion del menu*/
+
+
+/*decoramos la bola magica del principio*/
+#estronauta{
+    margin: 20vw;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    
+    
+
+    
+}
+
+#bola-1{
+    background-color: blue;
+    margin: 20vw;
+    height: 4%;
+    width: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*fin de la decoracion de la bola*/
+
+
+.contenido{
+    background-color: rgba(36, 36, 36, 0.6);
+    padding: 17px;
+    margin: 50px;
+    border-radius: 19px;
+    
+}
+
+.titulo-de-juegos{
+    background-color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 17px;
+    border-radius: 17px 17px 0 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.contenido_oredenar_juegos{
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 0 0 17px 17px;
+
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+img{
+    object-fit: cover; /*MEJORAMOS LA imagen*/
+    border-radius: 17px;
+}
+
+
+
+.imagenes_de_juegos{
+    height: 150px;
+    width: 300px;
+}
+
+
+
+
+
+footer{
+    background-color: aquamarine;
+}

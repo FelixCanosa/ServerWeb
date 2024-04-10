@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css"
+      
+   </head>
+<body>
+    
+    <header>
+      <h1 id="title">las flores</h1>
+    </header>
+
+    <main>
+        <section>
+          <p id="description">las flores son algo marabilloso</p>
+        </section>
+
+
+        
+        <div>
+           <form id="survey-form" >
+                <fieldset class="seccion">
+                    <legend>Información personal:</legend>
+                    <label id="name-label" for="nombre">Nombres:<input placeholder="ingresa un nombre" required id="name" type="text"></label>
+                    <label id="email-label" for="email">Email:<input placeholder="tu email" required id="email" type="email"></label>
+                    <label id="number-label" for="numero">Número: <input placeholder="tu edad" min="1" max="8" required id="number" type="number"></label>
+                </fieldset>
+
+      
+         <fieldset class="seccion">
+            <legend>Información personal:</legend>
+               <label id="survey-form" for="dropdown">elija las flores</label>
+                  <select id="dropdown" name="flores">
+                   <option value="opcion1">Amapola</option>
+                   <option value="opcion1">Diente de leon</option>
+                   <option value="naranja">Naranja</option>
+                   <option value="pera">Pera</option>
+                   <option value="banana">Banana</option>
+                 </select>
+         </fieldset>
+    
+            
+        <fieldset class="seccion_bloque">
+          <legend>que colore le gusta?</legend>
+            <label class="colores-flores">
+               <input  id="color" type="checkbox" value="rojo" name="color"> flor roja
+         </label>
+
+         <label class="colores-flores">
+            <input  id="color" type="radio" value="rojo" name="color"> flor violeta
+         </label>
+
+         <label class="colores-flores">
+            <input  id="color" type="radio" value="rojo" name="color"> flor amarilla
+         </label>
+
+         <label class="colores-flores">
+            <input  id="color" type="checkbox" value="amarillo" name="color"> flor amarilla
+         </label>
+
+         <label class="colores-flores">
+            <input  id="color" type="checkbox" value="azul" name="color"> flor azul
+         </label>
+        </fieldset> 
+
+        <fieldset class="seccion"> <!-- PASA ALGO RARO AQUÍ-->
+            <legend >comentarios</legend>
+         <label id="comentarios" > 
+             <textarea  name="comentarios" rows="10" cols="50"></textarea>
+        </fieldset>
+
+         </label>
+
+        <br>
+            <input  id="submit" type="submit" value="Enviar">
+        
+        </form>
+    </div>
+          
+       
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+
+body{
+    color: aliceblue;
+    background-image: url(imgenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+    
+}
+
+main{
+    margin: 120px 20%;  
+}
+
+/*configuracion del menu*/
+Header{
+    background-color: transparent;
+    margin: 0px auto;
+    text-align: center;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    position: fixed; /* Fija el encabezado en su posición */
+    top: 0; /* Alinea el encabezado en la parte superior de la ventana del navegador */
+    width: 100%; /* Asegura que el encabezado se extienda a lo ancho de la pantalla */
+    z-index: 1000; /* Asegura que el encabezado se mantenga por encima de otros elementos */
+}
+
+  
+
+
+ul {
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 0px auto;    
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+a{
+    margin: 50px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: pixel;
+    color: black;
+    
+}
+
+a:hover{
+    color: rgb(167, 4, 145);
+
+}
+
+#logo{
+    background-color: rgb(97, 207, 198);
+    display: inline-block;
+    border-radius: 50px 30px;
+    margin-top: 10px;
+     
+}
+
+#logo-li{
+    margin: 1px;
+    padding: 1px;
+}
+
+#logo-avion{
+    width: 40px;
+}
+
+
+/*termina la configuracion del menu*/
+
+
+
+/* Define la animación de BIEMVENIDO */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+  
+#letras_bienvenido{
+    text-align: center;
+    margin: 20vw 0;
+    color: black;
+    
+    
+}
+  /* Aplica la animación a cada letra */
+.letra {
+    display: inline-block; /* Permite que la animación se aplique individualmente */
+    opacity: 0; /* Comienza con la letra invisible */
+    animation-name: fadeIn; /* Nombre de la animación */
+    animation-duration: 1s; /* Duración de la animación */
+    animation-fill-mode: forwards; /* Mantiene la letra visible después de la animación */
+    font-size: 5vw; /*tamaño de la letra del BIENVENIDO*/
+    font-family: pixel;
+    text-align: center;
+    
+}
+
+ 
+  /* Retrasos individuales para cada letra */
+  .letra:nth-child(1) { animation-delay: 0.3s; }
+  .letra:nth-child(2) { animation-delay: 0.5s; }
+  .letra:nth-child(3) { animation-delay: 0.6s; }
+  .letra:nth-child(4) { animation-delay: 0.7s; }
+  .letra:nth-child(5) { animation-delay: 0.8s; }
+  .letra:nth-child(6) { animation-delay: 0.9s; }
+  .letra:nth-child(7) { animation-delay: 1s; }
+  .letra:nth-child(8) { animation-delay: 1.1s; }
+  .letra:nth-child(9) { animation-delay: 1.2s; }
+  .letra:nth-child(10) { animation-delay: 1.3s; }
+  /* Continúa con el patrón para cada letra adicional */
+
+
+.informacion{
+    background-color: rgba(51, 51, 51, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /*agrega sombra*/
+    border-radius: 30px;
+    padding: 30px 50px;
+
+}
+
+.concluciones {
+    background-color: rgba(51, 51, 51, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /*agrega sombra*/
+    border-radius: 30px;
+    padding: 20px 100px;
+    margin: 60px 0 ; 
+    text-align: center;
+    
+
+}
+
+
+
+.contenedor_bloque{
+   
+    
+    overflow: hidden;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+     align-items: center;
+     gap: 16px;
+     max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+    
+}
+
+.bloque{
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bloque{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+footer{
+    background-color: rgb(97, 207, 198);
+}
+

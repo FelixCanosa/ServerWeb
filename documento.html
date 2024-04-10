@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Chat con GPT4All</h1>
+
+<form id="chatForm">
+  <label for="message">Mensaje:</label><br>
+  <input type="text" id="message" name="message"><br>
+  <input type="submit" value="Enviar">
+</form>
+
+<p id="response"></p>
+
+<script>
+document.getElementById('chatForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var message = document.getElementById('message').value;
+
+  fetch('http://localhost:4891/api/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      message: message
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Aquí es donde actualizamos el elemento HTML con la respuesta
+    document.getElementById('response').textContent = data;
+  });
+});
+</script>
+
+</body>
+</html>
